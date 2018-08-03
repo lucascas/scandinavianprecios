@@ -171,7 +171,7 @@ function updatePrices($sku, $price, $storeId = 0)
 /**************************************************************************************************/
 
 try {
-    $csvFile        = 'update_precios_stock/precios.csv'; #EDIT - The path to import CSV file (Relative to Magento2 Root)
+    $csvFile        = 'precios.csv'; #EDIT - The path to import CSV file (Relative to Magento2 Root)
     $csvData        = readCsvRows(BP . '/' . $csvFile);
     $headers        = array_shift($csvData);
 
